@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-bs-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +7,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
 
     <!-- Link Icones -->
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+
+    <!-- Nosso CSS (fica depois do bootstrap para o nosso estilo valer) -->
+    <link rel="stylesheet" href="style.css">
 
     <title>Agencia de turismo</title>
 </head>
 <body>
     <!-- SEPARENDO FUNÇÕES -->
 
-     <!-- HEADER -->
+    <!-- HEADER -->
     <header>
 
         <!-- NAV: logo na esquerda e menu na direita -->
@@ -48,7 +51,7 @@
                     <!-- Slide 1 (o "active" faz ele aparecer primeiro) -->
                     <div class="carousel-item active">
                         <div class="slide">
-                            <img src="img1" alt="Oferta 1" class="imagem-grande">
+                            <img src="img/imgBranca.jpg" alt="Oferta 1" class="imagem-grande">
                             <div class="texto-oferta">
                                 <h1>Salvador com 20% de desconto</h1>
                                 <p>Aéreo e hotel juntos.</p>
@@ -60,7 +63,7 @@
                     <!-- Slide 2 -->
                     <div class="carousel-item">
                         <div class="slide">
-                            <img src="img2" alt="Oferta 2" class="imagem-grande">
+                            <img src="img/imgBranca.jpg" alt="Oferta 2" class="imagem-grande">
                             <div class="texto-oferta">
                                 <h1>Cruzeiros pelo Brasil</h1>
                                 <p>Tudo incluído.</p>
@@ -72,7 +75,7 @@
                     <!-- Slide 3 -->
                     <div class="carousel-item">
                         <div class="slide">
-                            <img src="img3" alt="Oferta 3" class="imagem-grande">
+                            <img src="img/imgBranca.jpg" alt="Oferta 3" class="imagem-grande">
                             <div class="texto-oferta">
                                 <h1>Férias em Gramado</h1>
                                 <p>Pacote com café da manhã.</p>
@@ -83,7 +86,7 @@
 
                 </div>
 
-                <!-- Setas para voltar e avançar  (M A L D I T A S) -->
+                <!-- Setas para voltar e avançar -->
                 <button class="seta seta-esquerda" type="button" data-bs-target="#carrosselOfertas" data-bs-slide="prev">
                     <i class="bi bi-chevron-left"></i>
                 </button>
@@ -91,6 +94,49 @@
                     <i class="bi bi-chevron-right"></i>
                 </button>
 
+            </div>
+        </section>
+
+
+        <!-- ===== 2) CARROSSEL NA ESQUERDA E TEXTO NA DIREITA ===== -->
+        <section class="bloco" id="destinos">
+            <div class="container">
+                <!-- row = linha / col = coluna (o Bootstrap divide a linha em 12 partes) -->
+                <div class="row align-items-center">
+
+                    <!-- Coluna da esquerda: carrossel -->
+                    <div class="col-md-6">
+                        <div id="carrosselDestinos" class="carousel carrossel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/imgBranca.jpg" alt="Destino 1" class="imagem-pequena">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/imgBranca.jpg" alt="Destino 2" class="imagem-pequena">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/imgBranca.jpg" alt="Destino 3" class="imagem-pequena">
+                                </div>
+                            </div>
+
+                            <button class="seta seta-esquerda" type="button" data-bs-target="#carrosselDestinos" data-bs-slide="prev">
+                                <i class="bi bi-chevron-left"></i>
+                            </button>
+                            <button class="seta seta-direita" type="button" data-bs-target="#carrosselDestinos" data-bs-slide="next">
+                                <i class="bi bi-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Coluna da direita: informações -->
+                    <div class="col-md-6">
+                        <h2>Destinos para todo tipo de viagem</h2>
+                        <p>Praias, serras e cidades históricas. Escolha o destino e a gente cuida do resto: passagem, hospedagem e passeios.</p>
+                        <p>Escreva aqui mais informações sobre os destinos da agência.</p>
+                        <a href="#contato" class="botao">Quero viajar</a>
+                    </div>
+
+                </div>
             </div>
         </section>
 
