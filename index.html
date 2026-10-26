@@ -37,14 +37,18 @@
     </header>
 
     <!-- MAIN -->
-     <!-- CARROSSEL OFERTAS NACIONAIS -->
+    <main>
+
+        <!-- ===== 1) CARROSSEL GRANDE DE OFERTAS ===== -->
         <section id="ofertas">
             <div id="carrosselOfertas" class="carousel carrossel">
 
                 <div class="carousel-inner">
+
+                    <!-- Slide 1 (o "active" faz ele aparecer primeiro) -->
                     <div class="carousel-item active">
                         <div class="slide">
-                            <img src="AAAAAAAAAAAAAAAAA" alt="Oferta 1" class="imagem-grande">
+                            <img src="img1" alt="Oferta 1" class="imagem-grande">
                             <div class="texto-oferta">
                                 <h1>Salvador com 20% de desconto</h1>
                                 <p>Aéreo e hotel juntos.</p>
@@ -52,6 +56,43 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="slide">
+                            <img src="img2" alt="Oferta 2" class="imagem-grande">
+                            <div class="texto-oferta">
+                                <h1>Cruzeiros pelo Brasil</h1>
+                                <p>Tudo incluído.</p>
+                                <a href="#contato" class="botao">Ver oferta</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="slide">
+                            <img src="img3" alt="Oferta 3" class="imagem-grande">
+                            <div class="texto-oferta">
+                                <h1>Férias em Gramado</h1>
+                                <p>Pacote com café da manhã.</p>
+                                <a href="#contato" class="botao">Ver oferta</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Setas para voltar e avançar  (M A L D I T A S) -->
+                <button class="seta seta-esquerda" type="button" data-bs-target="#carrosselOfertas" data-bs-slide="prev">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+                <button class="seta seta-direita" type="button" data-bs-target="#carrosselOfertas" data-bs-slide="next">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+
+            </div>
+        </section>
 
     <!-- FOOTER -->
 
