@@ -240,7 +240,29 @@
 
                 </div>
             </div>
-        </section>   
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="rodape" id="contato">
+            
+        <div class="container">
+            <div class="row"></div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                
+                <img src="https://i.pinimg.com/736x/06/8d/ef/068def20a0d556e6cf18e66086bf5d8f.jpg" alt="Logo da agência" class="logo">
+            
+                <p class="texto-claro mt-3">Realizamos o sonho da sua viagem, do Brasil ao mundo, com pacotes personalizados, bons preços e suporte de verdade.</p>
+                
+            <div class="redes">
+
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-whatsapp"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+
+            </div>
+            </div>
 
     </main>
 
