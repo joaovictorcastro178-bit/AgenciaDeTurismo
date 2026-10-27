@@ -300,68 +300,6 @@ body {
     font-weight: bold;
 }
 
-/* ---------- FOOTER ---------- */
-.rodape {
-    background-color: #07122a;
-    border-top: 1px solid #2a3d62;
-    padding: 50px 0 20px 0;
-}
- 
-/* título de cada coluna do rodapé */
-.rodape h5 {
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
- 
-/* listas sem bolinha */
-.rodape ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
- 
-.rodape li {
-    margin-bottom: 8px;
-    font-size: 14px;
-    color: #c5d0e6;
-}
- 
-.rodape a {
-    color: #c5d0e6;
-    text-decoration: none;
-}
- 
-.rodape a:hover {
-    color: #ff9d1c;
-}
- 
-/* icones laranjas */
-.rodape i {
-    color: #ff9d1c;
-    margin-right: 6px;
-}
- 
-/* icones das redes sociais */
-.redes a {
-    font-size: 22px;
-}
- 
-.redes i {
-    margin-right: 10px;
-}
- 
-/* direitos autorais */
-.rodape-final {
-    border-top: 1px solid #2a3d62;
-    margin-top: 25px;
-    padding-top: 15px;
-    text-align: center;
-    font-size: 13px;
-    color: #8fa3c4;
-}
-
 /* ---------- Celular (telas pequenas) ---------- */
 @media (max-width: 768px) {
 
