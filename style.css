@@ -300,44 +300,38 @@ body {
     font-weight: bold;
 }
 
-/* ---------- Celular (telas pequenas) ---------- */
-@media (max-width: 768px) {
+/* ---------- Footer ---------- */
+.rodape {
+    background-color: #07122a;
+    border-top: 1px solid #2a3d62;
+    padding: 40px 0 20px 0;
+}
 
-    .navegacao .container {
-        flex-direction: column;
-        gap: 10px;
-    }
+.rodape h5 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
 
-    .menu {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
-        margin: 12px 0;
-    }
+.rodape p {
+    color: #c5d0e6;
+    font-size: 14px;
+}
 
-    .imagem-grande {
-        height: 520px;
-    }
+.rodape a {
+    color: #c5d0e6;
+    text-decoration: none;
+}
 
-    .texto-oferta {
-        left: 20px;
-        right: 20px;
-    }
+.rodape a:hover {
+    color: #ff9d1c;
+}
 
-    .texto-oferta h1 {
-        font-size: 24px;
-    }
-
-    .destinos h2 {
-        font-size: 28px;
-    }
-
-    .cartao {
-        height: 180px;
-    }
-
-    .nome-lugar {
-        font-size: 11px;
-    }
-
+.rodape-final {
+    border-top: 1px solid #2a3d62;
+    margin-top: 25px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #8fa3c4;
 }

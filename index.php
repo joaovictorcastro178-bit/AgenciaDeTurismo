@@ -263,10 +263,61 @@
 
             </div>
             </div>
+            
+        <!-- Coluna 2: links do site -->
+        <div class="col-lg-2 col-md-6 mb-4">
+            <h5>Navegue</h5>
+            <ul>
+
+                <li><a href="#">Início</a></li>
+                <li><a href="#pacotes">Pacotes</a></li>
+                <li><a href="#ofertas">Promoções</a></li>
+                <li><a href="#sobre">Sobre nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            
+            </ul>
+            </div>
+ 
+        <!-- Coluna 3: destinos -->
+        <div class="col-lg-3 col-md-6 mb-4">
+            <h5>Destinos</h5>
+            <ul>
+
+                <li><a href="#destinos">Viagens nacionais</a></li>
+                <li><a href="#internacionais">Viagens internacionais</a></li>
+                <li><a href="#ofertas">Ofertas especiais</a></li>
+            
+            </ul>
+            </div>
+
+        <!-- Coluna 4: contato -->
+        <div class="col-lg-3 col-md-6 mb-4">
+            <h5>Contato</h5>
+            <ul>
+
+                <li><i class="bi bi-telephone"></i> (00) 0000-0000</li>
+                <li><i class="bi bi-whatsapp"></i> (00) 90000-0000</li>
+                <li><i class="bi bi-envelope"></i> contato@agencia.com.br</li>
+                <li><i class="bi bi-geo-alt"></i> Rua Exemplo, 123 - Cidade/UF</li>
+                <li><i class="bi bi-clock"></i> Seg a Sex, das 9h às 18h</li>
+
+            </ul>
+            </div>
+ 
+        </div>
+ 
+        
+        <!-- Linha final com os direitos -->
+        <div class="rodape-final">
+            <p>© 2026 Agência de turismo. Todos os direitos reservados.</p>
+        </div>
+        </div>
+        
+        </footer>
 
     </main>
 
-    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+        <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
         crossorigin="anonymous"></script>
 </body>
