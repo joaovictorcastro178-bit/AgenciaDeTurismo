@@ -20,13 +20,9 @@ body {
 /* ---------- Barra de navegação (NAV) ---------- */
 
 .navegacao {
-
-    background-color: white;
-
-    border-bottom: 1px solid #dddddd;
-
-    padding: 10px 0;
-
+    background-color: #0a1a33;
+    border-bottom: 1px solid #2a3d62;
+    padding: 12px 0;
 }
  
 /* deixa a logo e o menu lado a lado */
