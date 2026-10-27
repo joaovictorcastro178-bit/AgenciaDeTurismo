@@ -1,30 +1,21 @@
-/* ==========================================
+/* =====================================
+   ESTILO DO SITE DA AGENCIA DE TURISMO
 
-   ESTILO DO SITE DA AGÊNCIA DE TURISMO
+   Cores que usamos:
+   azul escuro  = #0a1a33
+   azul medio   = #0f2547
+   laranja      = #ff9d1c
+   branco       = white
+   cinza claro  = #c5d0e6
+   ===================================== */
 
-   Cores usadas:
-
-   azul escuro = #0d3b8c
-
-   amarelo     = #ffc107
-
-   cinza claro = #f2f2f2
-
-   ========================================== */
- 
- 
-/* ---------- Geral (vale para a página toda) ---------- */
 
 body {
-
     font-family: Arial, sans-serif;
-
     margin: 0;
-
-    color: #222222;
-
+    background-color: #0a1a33;
+    color: white;
 }
- 
  
 /* ---------- Barra de navegação (NAV) ---------- */
 
