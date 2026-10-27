@@ -1,5 +1,435 @@
+/* ==========================================
+
+   ESTILO DO SITE DA AGÊNCIA DE TURISMO
+
+   Cores usadas:
+
+   azul escuro = #0d3b8c
+
+   amarelo     = #ffc107
+
+   cinza claro = #f2f2f2
+
+   ========================================== */
+ 
+ 
+/* ---------- Geral (vale para a página toda) ---------- */
+
 body {
+
     font-family: Arial, sans-serif;
+
     margin: 0;
+
     color: #222222;
+
 }
+ 
+ 
+/* ---------- Barra de navegação (NAV) ---------- */
+
+.navegacao {
+
+    background-color: white;
+
+    border-bottom: 1px solid #dddddd;
+
+    padding: 10px 0;
+
+}
+ 
+/* deixa a logo e o menu lado a lado */
+
+.navegacao .container {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+ 
+/* tamanho da logo */
+
+.logo {
+
+    height: 50px;
+
+}
+ 
+/* menu com os links */
+
+.menu {
+
+    display: flex;
+
+    gap: 25px;
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+ 
+.menu a {
+
+    color: #0d3b8c;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+ 
+.menu a:hover {
+
+    color: #ffc107;
+
+}
+ 
+ 
+/* ---------- Botões ---------- */
+
+.botao {
+
+    background-color: #ffc107;
+
+    color: #0d3b8c;
+
+    padding: 12px 28px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    display: inline-block;
+
+}
+ 
+.botao:hover {
+
+    background-color: #e0a800;
+
+    color: #0d3b8c;
+
+}
+ 
+ 
+/* ---------- Carrosséis (imagens e setas) ---------- */
+ 
+/* a div "slide" guarda a imagem e o texto que fica por cima dela */
+
+.slide {
+
+    position: relative;
+
+}
+ 
+/* imagem do carrossel grande de ofertas */
+
+.imagem-grande {
+
+    width: 100%;
+
+    height: 450px;
+
+    object-fit: cover;          /* a imagem preenche o espaço sem esticar */
+
+    background-color: #cccccc;  /* cor de fundo enquanto não temos a imagem */
+
+}
+ 
+/* imagem dos carrosséis menores */
+
+.imagem-pequena {
+
+    width: 100%;
+
+    height: 350px;
+
+    object-fit: cover;
+
+    background-color: #cccccc;
+
+    border-radius: 15px;
+
+}
+ 
+/* texto que fica em cima da imagem grande */
+
+.texto-oferta {
+
+    position: absolute;
+
+    top: 30%;
+
+    left: 80px;
+
+    color: white;
+
+}
+ 
+.texto-oferta h1 {
+
+    font-size: 40px;
+
+    font-weight: bold;
+
+}
+ 
+/* a div que envolve o carrossel precisa ser "relative"
+
+   para as setas ficarem posicionadas dentro dele */
+
+.carrossel {
+
+    position: relative;
+
+}
+ 
+/* setas de passar para o lado (botões redondos) */
+
+.seta {
+
+    position: absolute;
+
+    top: 45%;
+
+    width: 40px;
+
+    height: 40px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background-color: white;
+
+    color: #0d3b8c;
+
+    z-index: 5;
+
+}
+ 
+.seta-esquerda {
+
+    left: 15px;
+
+}
+ 
+.seta-direita {
+
+    right: 15px;
+
+}
+ 
+ 
+/* ---------- Blocos com carrossel e texto ---------- */
+
+.bloco {
+
+    padding: 50px 0;
+
+}
+ 
+.bloco h2 {
+
+    color: #0d3b8c;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+
+}
+ 
+/* só muda a cor de fundo do segundo bloco */
+
+.fundo-cinza {
+
+    background-color: #f2f2f2;
+
+}
+ 
+ 
+/* ---------- Quadros de informação ---------- */
+
+.quadros {
+
+    padding: 50px 0;
+
+}
+ 
+.quadros h2 {
+
+    color: #0d3b8c;
+
+    font-weight: bold;
+
+    margin-bottom: 30px;
+
+}
+ 
+.quadro {
+
+    border: 1px solid #dddddd;
+
+    border-radius: 10px;
+
+    padding: 25px;
+
+    height: 100%;
+
+    background-color: white;
+
+}
+ 
+.quadro i {
+
+    font-size: 35px;
+
+    color: #0d3b8c;
+
+}
+ 
+ 
+/* ---------- Sobre nós ---------- */
+
+.sobre {
+
+    background-color: #f2f2f2;
+
+    padding: 50px 0;
+
+}
+ 
+.sobre h2 {
+
+    color: #0d3b8c;
+
+    font-weight: bold;
+
+}
+ 
+ 
+/* ---------- Rodapé (FOOTER) ---------- */
+
+.rodape {
+
+    background-color: #0d3b8c;
+
+    color: white;
+
+    padding-top: 40px;
+
+}
+ 
+.rodape h3 {
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+
+}
+ 
+.rodape ul {
+
+    list-style: none;
+
+    padding: 0;
+
+}
+ 
+.rodape li {
+
+    margin-bottom: 8px;
+
+}
+ 
+.rodape a {
+
+    color: white;
+
+    text-decoration: none;
+
+}
+ 
+.rodape a:hover {
+
+    color: #ffc107;
+
+}
+ 
+/* ícones das redes sociais */
+
+.redes a {
+
+    font-size: 24px;
+
+    margin-right: 12px;
+
+}
+ 
+/* faixa de baixo com o copyright */
+
+.copyright {
+
+    border-top: 1px solid white;
+
+    margin-top: 30px;
+
+    padding: 15px 0;
+
+    text-align: center;
+
+}
+ 
+ 
+/* ---------- Celular (telas pequenas) ---------- */
+
+@media (max-width: 768px) {
+
+    .navegacao .container {
+
+        flex-direction: column;
+
+        gap: 10px;
+
+    }
+ 
+    .menu {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 12px;
+
+    }
+ 
+    .imagem-grande {
+
+        height: 300px;
+
+    }
+ 
+    .texto-oferta {
+
+        left: 20px;
+
+    }
+ 
+    .texto-oferta h1 {
+
+        font-size: 24px;
+
+    }
+
+}
+ 
