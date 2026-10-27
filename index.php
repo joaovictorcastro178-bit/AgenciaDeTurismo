@@ -27,8 +27,9 @@
         <nav class="navegacao">
             <div class="container">
                 <a href="#">
-                    <img src="https://14biscrm.com.br/brand/og-14bis.png" alt="Logo da agência" class="logo">
+                    <img src="https://i.pinimg.com/736x/06/8d/ef/068def20a0d556e6cf18e66086bf5d8f.jpg" alt="Logo da agência" class="logo">
                 </a>
+                
 
                 <ul class="menu">
                     <li><a href="#" class="ativo"><i class="bi bi-house-door"></i> Início</a></li>
@@ -227,7 +228,7 @@
                     <!-- Texto Viagens Internacionais - Direita -->
                     <div class="col-lg-5">
                         <p class="etiqueta"><i class="bi bi-geo-alt-fill"></i> VIAGENS INTERNACIONAIS</p>
-                        <h2>Descubra o mundo, <span class="laranja">de ponta a ponta</span></h2>
+                        <h2>Descubra o mundo, <span class="laranja">de ponta a ponta!</span></h2>
                         <p class="texto-claro">De Maldivas ao imponente Coliseu, nossa seleção de destinos internacionais é perfeita para todos os estilos de viajantes.</p>
                         <div class="beneficios">
                             <div class="beneficio"><i class="bi bi-shield-check"></i> <span>Pacotes<br>personalizados</span></div>
