@@ -51,7 +51,7 @@
 
         <!-- ===== 1) CARROSSEL GRANDE DE OFERTAS ===== -->
         <section id="ofertas">
-            <div id="carrosselOfertas" class="carousel carrossel" class="carousel slide" data-bs-ride="carousel">
+            <div id="carrosselOfertas" class="carousel slide carrossel" data-bs-ride="carousel">
 
                 <div class="carousel-inner">
 
@@ -63,8 +63,8 @@
                             <div class="texto-oferta">
                                 <span class="selo">PROMOÇÃO ESPECIAL</span>
                                 <h1>Salvador com <span class="laranja">20% de desconto</span></h1>
-                                <p>Viagem e hotel inclusos.</p>
-                                <a href="#contato" class="botao">Ver oferta</a>
+                                <p>Água cristalina, culinaria local e paisagens deslumbrantes.</p>
+                                <a href="#contato" class="botao-laranja">Ver oferta</a>
                             </div>
                         </div>
                     </div>
@@ -78,7 +78,7 @@
                                 <span class="selo">PROMOÇÃO ESPECIAL</span>
                                 <h1> Tour pelo <span class="laranja">Brasil</span></h1>
                                 <p>Tudo que você precisa para uma experiência inesquecível.</p>
-                                <a href="#contato" class="botao">Ver oferta</a>
+                                <a href="#contato" class="botao-laranja">Ver oferta</a>
                             </div>
                         </div>
                     </div>
@@ -92,7 +92,7 @@
                                 <span class="selo">PROMOÇÃO ESPECIAL</span>
                                 <h1>Férias em <span class="laranja">Gramado</span></h1>
                                 <p>Chocolate quente, charme europeu e muito aconchego.</p>
-                                <a href="#contato" class="botao">Ver oferta</a>
+                                <a href="#contato" class="botao-laranja">Ver oferta</a>
                             </div>
                         </div>
                     </div>
@@ -100,177 +100,82 @@
                 </div>
 
                 <!-- Setas para voltar e avançar -->
-                <button class="seta seta-esquerda" type="button" data-bs-target="#carrosselOfertas"
-                    data-bs-slide="prev">
+                <button class="seta seta-esquerda" type="button" data-bs-target="#carrosselOfertas" data-bs-slide="prev">
                     <i class="bi bi-chevron-left"></i>
                 </button>
                 <button class="seta seta-direita" type="button" data-bs-target="#carrosselOfertas" data-bs-slide="next">
                     <i class="bi bi-chevron-right"></i>
                 </button>
 
+                <!-- Bolinhas embaixo -->
+                <div class="carousel-indicators pontos">
+                    <button type="button" class="active" data-bs-target="#carrosselOfertas" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carrosselOfertas" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carrosselOfertas" data-bs-slide-to="2"></button>
+                </div>
+
             </div>
         </section>
 
 
-        <!-- ===== 2) CARROSSEL NA ESQUERDA E TEXTO NA DIREITA ===== -->
-        <section class="bloco" id="destinos">
+        <!-- ===== 2) VIAGENS NACIONAIS: CARROSSEL NA ESQUERDA E TEXTO NA DIREITA ===== -->
+        <section class="destinos fundo-1" id="destinos">
             <div class="container">
                 <!-- row = linha / col = coluna (o Bootstrap divide a linha em 12 partes) -->
                 <div class="row align-items-center">
 
                     <!-- Coluna da esquerda: carrossel -->
-                    <div class="col-md-6">
-                        <div id="carrosselDestinos" class="carousel carrossel">
+                    <div class="col-lg-7">
+                        <div id="carrosselNacionais" class="carousel carrossel">
                             <div class="carousel-inner">
+
+                              <!-- Grupo Slides Nacional 1-->
                                 <div class="carousel-item active">
-                                    <img src="https://i.pinimg.com/200x150/8d/30/8b/8d308b18856aedadbe9bc8bf01818575.jpg" alt="Destino 1" class="imagem-pequena">
+                                    <div class="row row-cols-3 g-2">
+                                        <!-- cada cartão = uma imagem + o nome do lugar -->
+                                        <div class="col"><div class="cartao"><img src="https://mcbtur.com.br/wp-content/uploads/2025/01/Pequenos-Lencois-Maranhenses.webp" alt="Rio de Janeiro"><span class="nome-lugar">Rio de Janeiro</span></div></div>
+                                        <div class="col"><div class="cartao"><img src="https://mcbtur.com.br/wp-content/uploads/2025/01/Pequenos-Lencois-Maranhenses.webp" alt="Lençóis Maranhenses"><span class="nome-lugar">Lençóis Maranhenses</span></div></div>
+                                        <div class="col"><div class="cartao"><img src="https://mcbtur.com.br/wp-content/uploads/2025/01/Pequenos-Lencois-Maranhenses.webp" alt="Gramado"><span class="nome-lugar">Gramado</span></div></div>
+                                    </div>
                                 </div>
+
+                              <!-- Grupo Slides Nacional 2-->
                                 <div class="carousel-item">
-                                    <img src="img/imgBranca.jpg" alt="Destino 2" class="imagem-pequena">
+                                    <div class="row row-cols-3 g-2">
+                                        <div class="col"><div class="cartao"><img src="https://mcbtur.com.br/wp-content/uploads/2025/01/Pequenos-Lencois-Maranhenses.webp" alt="Chapada Diamantina"><span class="nome-lugar">Chapada Diamantina</span></div></div>
+                                        <div class="col"><div class="cartao"><img src="https://mcbtur.com.br/wp-content/uploads/2025/01/Pequenos-Lencois-Maranhenses.webp" alt="Foz do Iguaçu"><span class="nome-lugar">Foz do Iguaçu</span></div></div>
+                                        <div class="col"><div class="cartao"><img src="https://mcbtur.com.br/wp-content/uploads/2025/01/Pequenos-Lencois-Maranhenses.webp" alt="Jericoacoara"><span class="nome-lugar">Jericoacoara</span></div></div>
+                                    </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <img src="img/imgBranca.jpg" alt="Destino 3" class="imagem-pequena">
-                                </div>
+
                             </div>
 
-                            <button class="seta seta-esquerda" type="button" data-bs-target="#carrosselDestinos"
+                            <!-- Setas para voltar e avançar -->
+                            <button class="seta seta-esquerda" type="button" data-bs-target="#carrosselNacionais"
                                 data-bs-slide="prev">
                                 <i class="bi bi-chevron-left"></i>
                             </button>
-                            <button class="seta seta-direita" type="button" data-bs-target="#carrosselDestinos"
+                            <button class="seta seta-direita" type="button" data-bs-target="#carrosselNacionais"
                                 data-bs-slide="next">
                                 <i class="bi bi-chevron-right"></i>
                             </button>
                         </div>
                     </div>
 
-                    <!-- Coluna da direita: informações -->
-                    <div class="col-md-6">
-                        <h2>Destinos para todo tipo de viagem</h2>
-                        <p>Praias, serras e cidades históricas. Escolha o destino e a gente cuida do resto: passagem,
-                            hospedagem e passeios.</p>
-                        <p>Escreva aqui mais informações sobre os destinos da agência.</p>
-                        <a href="#contato" class="botao">Quero viajar</a>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- ===== 3) TEXTO NA DIREITA E CARROSSEL NA ESQUERDA ===== -->
-        <section class="bloco fundo-cinza" id="pacotes">
-            <div class="container">
-                <div class="row align-items-center">
-
-                    <!-- Coluna da esquerda: informações -->
-                    <div class="col-md-6">
-                        <h2>Pacotes completos</h2>
-                        <p>Aéreo, hotel e traslado no mesmo pacote, com o valor fechado desde o começo.</p>
-                        <p>Escreva aqui mais informações sobre os pacotes da agência.</p>
-                        <a href="#contato" class="botao">Pedir orçamento</a>
-                    </div>
-
-                    <!-- Coluna da direita: carrossel -->
-                    <div class="col-md-6">
-                        <div id="carrosselPacotes" class="carousel carrossel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="https://i.pinimg.com/736x/c6/13/2a/c6132ab9ed4c6b24b5c91f7ab09b9760.jpg" alt="Pacote 1" class="imagem-pequena">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/imgBranca.jpg" alt="Pacote 2" class="imagem-pequena">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/imgBranca.jpg" alt="Pacote 3" class="imagem-pequena">
-                                </div>
-                            </div>
-
-                            <button class="seta seta-esquerda" type="button" data-bs-target="#carrosselPacotes"
-                                data-bs-slide="prev">
-                                <i class="bi bi-chevron-left"></i>
-                            </button>
-                            <button class="seta seta-direita" type="button" data-bs-target="#carrosselPacotes"
-                                data-bs-slide="next">
-                                <i class="bi bi-chevron-right"></i>
-                            </button>
+                    <!-- Texto Viagens Nacionais - Direita -->
+                    <div class="col-lg-5">
+                        <p class="etiqueta"><i class="bi bi-geo-alt-fill"></i> VIAGENS NACIONAIS</p>
+                        <h2>Descubra o Brasil, <span class="laranja">de norte a sul!</span></h2>
+                        <p class="texto-claro">De praias paradisíacas a cidades históricas, nossa seleção de destinos nacionais é perfeita para todos os estilos de viajantes.</p>
+                        <div class="beneficios">
+                            <div class="beneficio"><i class="bi bi-shield-check"></i> <span>Pacotes<br>personalizados</span></div>
+                            <div class="beneficio"><i class="bi bi-wallet2"></i> <span>Melhores<br>preços</span></div>
+                            <div class="beneficio"><i class="bi bi-headset"></i> <span>Suporte<br>especializado</span></div>
                         </div>
+                        <a href="#contato" class="botao-contorno">Conheça nossos destinos nacionais <i class="bi bi-arrow-right"></i></a>
                     </div>
 
                 </div>
             </div>
         </section>
-       
-        <!-- ===== 5) SOBRE NÓS ===== -->
-        <section class="sobre" id="sobre">
-            <div class="container">
-                <div class="row align-items-center">
-
-                    <div class="col-md-6">
-                        <h2>Sobre nós</h2>
-                        <p>Conte aqui a história da agência: quando começou, quem faz parte da equipe e o que vocês
-                            pensam sobre viajar.</p>
-                        <p>Fale também da missão e do que deixa a agência diferente das outras.</p>
-                    </div>
-
-                    <div class="col-md-6">
-                        <img src="img/imgBranca.jpg" alt="Nossa equipe" class="imagem-pequena">
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="rodape" id="contato">
-        <div class="container">
-            <div class="row">
-
-                <!-- sobre a agência  -->
-                <div class="col-md-4">
-                    <img src="14BIS.png" alt="Logo da agência" class="logo">
-                    <p>Escreva aqui uma frase curta sobre a agência.</p>
-                    <div class="redes">
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-whatsapp"></i></a>
-                    </div>
-                </div>
-
-                <!-- links -->
-                <div class="col-md-4">
-                    <h3>Links</h3>
-                    <ul>
-                        <li><a href="#ofertas">Ofertas</a></li>
-                        <li><a href="#destinos">Destinos</a></li>
-                        <li><a href="#pacotes">Pacotes</a></li>
-                        <li><a href="#sobre">Sobre nós</a></li>
-                    </ul>
-                </div>
-
-                <!-- contato -->
-                <div class="col-md-4">
-                    <h3>Contato</h3>
-                    <ul>
-                        <li><i class="bi bi-telephone"></i> (00) 0000-0000</li>
-                        <li><i class="bi bi-envelope"></i> contatoagencia@gmail.com.br</li>
-                        <li><i class="bi bi-geo-alt"></i> Rua Sei lá, 123 - Carapicuiba</li>
-                        <li><i class="bi bi-clock"></i> Segunda a sexta, 9h às 18h</li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <div class="copyright">
-                &copy; 2026 Agência de Turismo. Todos os direitos reservados.
-            </div>
-        </div>
-    </footer>
-
-    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
-        crossorigin="anonymous"></script>
-</body>
-
-</html>
+        

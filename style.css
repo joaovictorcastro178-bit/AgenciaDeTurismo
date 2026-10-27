@@ -3,13 +3,12 @@
 
    Cores que usamos:
    azul escuro  = #0a1a33
-   azul medio   = #0f2547
    laranja      = #ff9d1c
    branco       = white
    cinza claro  = #c5d0e6
    ===================================== */
 
-   /* ---------- Selo (muito) ---------- */
+   /* ---------- Selo (muito foda) ---------- */
 .selo {
     background-color: #ff9d1c;
     color: #0a1a33;
@@ -33,7 +32,7 @@ body {
     background-color: #0a1a33;
     color: white;
 }
- 
+
 /* ---------- Barra de navegação (NAV) ---------- */
 
 .navegacao {
@@ -41,399 +40,305 @@ body {
     border-bottom: 1px solid #2a3d62;
     padding: 12px 0;
 }
- 
+
 /* deixa a logo e o menu lado a lado */
-
 .navegacao .container {
-
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
-
 }
- 
+
 /* tamanho da logo */
-
 .logo {
-
     height: 50px;
-
 }
- 
+
 /* menu com os links */
-
 .menu {
-
     display: flex;
-
     gap: 25px;
-
     list-style: none;
-
     margin: 0;
-
     padding: 0;
-
 }
- 
+
 .menu a {
-
-    color: #0d3b8c;
-
+    color: white;
     text-decoration: none;
-
     font-weight: bold;
-
+    font-size: 14px;
 }
- 
+
 .menu a:hover {
-
-    color: #ffc107;
-
+    color: #ff9d1c;
 }
- 
- 
+
+/* pagina atual: linha laranja embaixo */
+.ativo {
+    border-bottom: 2px solid #ff9d1c;
+    padding-bottom: 6px;
+}
+
+
 /* ---------- Botões ---------- */
-
-.botao {
-
-    background-color: #ffc107;
-
-    color: #0d3b8c;
-
-    padding: 12px 28px;
-
+.botao-laranja {
+    background-color: #ff9d1c;
+    color: #0a1a33;
+    padding: 10px 22px;
     border-radius: 30px;
-
     text-decoration: none;
-
     font-weight: bold;
-
+    font-size: 14px;
     display: inline-block;
-
 }
- 
-.botao:hover {
 
-    background-color: #e0a800;
-
-    color: #0d3b8c;
-
+.botao-laranja:hover {
+    background-color: #e08700;
+    color: #0a1a33;
 }
- 
- 
-/* ---------- Carrosséis (imagens e setas) ---------- */
- 
-/* a div "slide" guarda a imagem e o texto que fica por cima dela */
 
-.slide {
-
-    position: relative;
-
-}
- 
-/* imagem do carrossel grande de ofertas */
-
-.imagem-grande {
-
-    width: 100%;
-
-    height: 450px;
-
-    object-fit: cover;          /* a imagem preenche o espaço sem esticar */
-
-    background-color: #cccccc;  /* cor de fundo enquanto não temos a imagem */
-
-}
- 
-/* imagem dos carrosséis menores */
-
-.imagem-pequena {
-
-    width: 100%;
-
-    height: 350px;
-
-    object-fit: cover;
-
-    background-color: #cccccc;
-
-    border-radius: 15px;
-
-}
- 
-/* texto que fica em cima da imagem grande */
-
-.texto-oferta {
-
-    position: absolute;
-
-    top: 30%;
-
-    left: 80px;
-
+/* botao so com a borda laranja */
+.botao-contorno {
+    border: 2px solid #ff9d1c;
     color: white;
-
-}
- 
-.texto-oferta h1 {
-
-    font-size: 40px;
-
-    font-weight: bold;
-
-}
- 
-/* a div que envolve o carrossel precisa ser "relative"
-
-   para as setas ficarem posicionadas dentro dele */
-
-.carrossel {
-
-    position: relative;
-
-}
- 
-/* setas de passar para o lado (botões redondos) */
-
-.seta {
-
-    position: absolute;
-
-    top: 45%;
-
-    width: 40px;
-
-    height: 40px;
-
-    border: none;
-
-    border-radius: 50%;
-
-    background-color: white;
-
-    color: #0d3b8c;
-
-    z-index: 5;
-
-}
- 
-.seta-esquerda {
-
-    left: 15px;
-
-}
- 
-.seta-direita {
-
-    right: 15px;
-
-}
- 
- 
-/* ---------- Blocos com carrossel e texto ---------- */
-
-.bloco {
-
-    padding: 50px 0;
-
-}
- 
-.bloco h2 {
-
-    color: #0d3b8c;
-
-    font-weight: bold;
-
-    margin-bottom: 15px;
-
-}
- 
-/* só muda a cor de fundo do segundo bloco */
-
-.fundo-cinza {
-
-    background-color: #f2f2f2;
-
-}
- 
- 
-/* ---------- Quadros de informação ---------- */
-
-.quadros {
-
-    padding: 50px 0;
-
-}
- 
-.quadros h2 {
-
-    color: #0d3b8c;
-
-    font-weight: bold;
-
-    margin-bottom: 30px;
-
-}
- 
-.quadro {
-
-    border: 1px solid #dddddd;
-
-    border-radius: 10px;
-
-    padding: 25px;
-
-    height: 100%;
-
-    background-color: white;
-
-}
- 
-.quadro i {
-
-    font-size: 35px;
-
-    color: #0d3b8c;
-
-}
- 
- 
-/* ---------- Sobre nós ---------- */
-
-.sobre {
-
-    background-color: #f2f2f2;
-
-    padding: 50px 0;
-
-}
- 
-.sobre h2 {
-
-    color: #0d3b8c;
-
-    font-weight: bold;
-
-}
- 
- 
-/* ---------- Rodapé (FOOTER) ---------- */
-
-.rodape {
-
-    background-color: #0d3b8c;
-
-    color: white;
-
-    padding-top: 40px;
-
-}
- 
-.rodape h3 {
-
-    font-size: 18px;
-
-    font-weight: bold;
-
-    margin-bottom: 15px;
-
-}
- 
-.rodape ul {
-
-    list-style: none;
-
-    padding: 0;
-
-}
- 
-.rodape li {
-
-    margin-bottom: 8px;
-
-}
- 
-.rodape a {
-
-    color: white;
-
+    padding: 10px 22px;
+    border-radius: 30px;
     text-decoration: none;
-
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-block;
 }
- 
-.rodape a:hover {
 
-    color: #ffc107;
-
+.botao-contorno:hover {
+    background-color: #ff9d1c;
+    color: #0a1a33;
 }
- 
-/* ícones das redes sociais */
 
-.redes a {
 
-    font-size: 24px;
+/* ---------- Carrosséis (imagens e setas) ---------- */
 
-    margin-right: 12px;
-
+/* a div "slide" guarda a imagem e o texto que fica por cima dela */
+.slide {
+    position: relative;
 }
- 
-/* faixa de baixo com o copyright */
 
-.copyright {
-
-    border-top: 1px solid white;
-
-    margin-top: 30px;
-
-    padding: 15px 0;
-
-    text-align: center;
-
+/* imagem do carrossel grande de ofertas */
+.imagem-grande {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;          /* a imagem preenche o espaço sem esticar */
+    background-color: #cccccc;  /* cor de fundo enquanto não temos a imagem */
 }
- 
- 
+
+/* camada escura em cima da imagem
+   (escura na esquerda e some aos poucos para a direita) */
+.camada-escura {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #0a1a33 30%, transparent);
+}
+
+/* texto que fica em cima da imagem grande */
+.texto-oferta {
+    position: absolute;
+    top: 30%;
+    left: 80px;
+    max-width: 520px;
+    color: white;
+}
+
+.texto-oferta h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.texto-oferta p {
+    color: #c5d0e6;
+}
+
+/* a div que envolve o carrossel precisa ser "relative"
+   para as setas ficarem posicionadas dentro dele */
+.carrossel {
+    position: relative;
+}
+
+/* setas de passar para o lado (botões redondos) */
+.seta {
+    position: absolute;
+    top: 45%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    color: #0d3b8c;
+    z-index: 5;
+}
+
+.seta-esquerda {
+    left: 15px;
+}
+
+.seta-direita {
+    right: 15px;
+}
+
+/* bolinhas de baixo do carrossel grande */
+.pontos {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 12px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 5;
+}
+
+.pontos button {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    margin: 0 4px;
+    border: none;
+    border-radius: 50%;
+    background-color: #8fa3c4;
+    opacity: 1;
+    text-indent: 0;
+    flex: none;
+}
+
+/* bolinha do slide atual fica laranja */
+.pontos button.active {
+    background-color: #ff9d1c;
+}
+
+
+/* ---------- Viagens nacionais ---------- */
+.destinos {
+    padding: 50px 0;
+}
+
+.destinos h2 {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.fundo-1 {
+    background-color: #0a1a33;
+}
+
+/* texto pequeno em cima do título */
+.etiqueta {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.etiqueta i {
+    color: #ff9d1c;
+}
+
+/* texto dos paragrafos (cinza claro) */
+.texto-claro {
+    color: #c5d0e6;
+    line-height: 25px;
+}
+
+/* icone + texto pequeno */
+.beneficios {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.beneficio {
+    display: flex;
+    align-items: center;
+    margin-right: 22px;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.beneficio i {
+    font-size: 26px;
+    color: #ff9d1c;
+    margin-right: 8px;
+}
+
+/* cada cartão de destino */
+.cartao {
+    position: relative;
+    height: 260px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #2a3d62;
+}
+
+.cartao img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #1a3158;
+}
+
+/* nome do lugar em cima da imagem */
+.nome-lugar {
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+    background-color: #0a1a33;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
 /* ---------- Celular (telas pequenas) ---------- */
-
 @media (max-width: 768px) {
 
     .navegacao .container {
-
         flex-direction: column;
-
         gap: 10px;
-
     }
- 
+
     .menu {
-
         flex-wrap: wrap;
-
         justify-content: center;
-
         gap: 12px;
-
+        margin: 12px 0;
     }
- 
+
     .imagem-grande {
-
-        height: 300px;
-
+        height: 520px;
     }
- 
+
     .texto-oferta {
-
         left: 20px;
-
+        right: 20px;
     }
- 
+
     .texto-oferta h1 {
-
         font-size: 24px;
+    }
 
+    .destinos h2 {
+        font-size: 28px;
+    }
+
+    .cartao {
+        height: 180px;
+    }
+
+    .nome-lugar {
+        font-size: 11px;
     }
 
 }
- 
