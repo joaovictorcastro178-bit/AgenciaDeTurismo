@@ -65,7 +65,7 @@
                                 <span class="selo">PROMOÇÃO ESPECIAL</span>
                                 <h1>Salvador com <span class="laranja">20% de desconto</span></h1>
                                 <p>Água cristalina, culinaria local e paisagens deslumbrantes.</p>
-                                <a href="#contato" class="botao-laranja">Ver oferta</a>
+                                <a href="teste.html?tipo=especial" class="botao-laranja">Ver oferta</a>
                             </div>
                         </div>
                     </div>
@@ -79,7 +79,7 @@
                                 <span class="selo">PROMOÇÃO ESPECIAL</span>
                                 <h1> Tour pelo <span class="laranja">Brasil</span></h1>
                                 <p>Tudo que você precisa para uma experiência inesquecível.</p>
-                                <a href="#contato" class="botao-laranja">Ver oferta</a>
+                                <a href="teste.html?tipo=internacional" class="botao-laranja">Ver oferta</a>
                             </div>
                         </div>
                     </div>
@@ -93,7 +93,7 @@
                                 <span class="selo">PROMOÇÃO ESPECIAL</span>
                                 <h1>Férias em <span class="laranja">Gramado</span></h1>
                                 <p>Chocolate quente, charme europeu e muito aconchego.</p>
-                                <a href="#contato" class="botao-laranja">Ver oferta</a>
+                                <a href="teste.html?tipo=nacional" class="botao-laranja">Ver oferta</a>
                             </div>
                         </div>
                     </div>
@@ -173,7 +173,7 @@
                             <div class="beneficio"><i class="bi bi-wallet2"></i> <span>Melhores<br>preços</span></div>
                             <div class="beneficio"><i class="bi bi-headset"></i> <span>Suporte<br>especializado</span></div>
                         </div>
-                        <a href="cadastroViagem.php?tipo=nacional" class="botao-contorno">Conheça nossos destinos nacionais <i class="bi bi-arrow-right"></i></a>
+                        <a href="teste.html?tipo=nacional" class="botao-contorno">Conheça nossos destinos nacionais <i class="bi bi-arrow-right"></i></a>
                     </div>
 
                 </div>
@@ -235,7 +235,7 @@
                             <div class="beneficio"><i class="bi bi-wallet2"></i> <span>Melhores<br>preços</span></div>
                             <div class="beneficio"><i class="bi bi-headset"></i> <span>Suporte<br>especializado</span></div>
                         </div>
-                        <a href="cadastroViagem.php?tipo=internacional" class="botao-contorno">Conheça nossos destinos internacionais <i class="bi bi-arrow-right"></i></a>
+                        <a href="teste.html?tipo=internacional" class="botao-contorno">Conheça nossos destinos internacionais <i class="bi bi-arrow-right"></i></a>
                     </div>
 
                 </div>
@@ -283,9 +283,9 @@
             <h5>Destinos</h5>
             <ul>
 
-                <li><a href="cadastroViagem.php?tipo=nacional">Viagens nacionais</a></li>
-                <li><a href="cadastroViagem.php?tipo=internacional">Viagens internacionais</a></li>
-                <li><a href="cadastroViagem.php?tipo=especial">Ofertas especiais</a></li>
+                <li><a href="teste.html?tipo=nacional">Viagens nacionais</a></li>
+                <li><a href="teste.html?tipo=internacional">Viagens internacionais</a></li>
+                <li><a href="teste.html?tipo=especial">Ofertas especiais</a></li>
             
             </ul>
             </div>
