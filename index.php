@@ -66,6 +66,7 @@
                                 <h1>Salvador com <span class="laranja">20% de desconto</span></h1>
                                 <p>Água cristalina, culinaria local e paisagens deslumbrantes.</p>
                                 <a href="teste.html?tipo=especial" class="botao-laranja">Ver oferta</a>
+                                
                             </div>
                         </div>
                     </div>
@@ -173,7 +174,7 @@
                             <div class="beneficio"><i class="bi bi-wallet2"></i> <span>Melhores<br>preços</span></div>
                             <div class="beneficio"><i class="bi bi-headset"></i> <span>Suporte<br>especializado</span></div>
                         </div>
-                        <a href="teste.html?tipo=nacional" class="botao-contorno">Conheça nossos destinos nacionais <i class="bi bi-arrow-right"></i></a>
+                        <a href="cadastroViagem.php?tipo=nacional" class="botao-contorno">Conheça nossos destinos nacionais <i class="bi bi-arrow-right"></i></a>
                     </div>
 
                 </div>
@@ -235,7 +236,7 @@
                             <div class="beneficio"><i class="bi bi-wallet2"></i> <span>Melhores<br>preços</span></div>
                             <div class="beneficio"><i class="bi bi-headset"></i> <span>Suporte<br>especializado</span></div>
                         </div>
-                        <a href="teste.html?tipo=internacional" class="botao-contorno">Conheça nossos destinos internacionais <i class="bi bi-arrow-right"></i></a>
+                        <a href="cadastroViagem.php?tipo=internacional" class="botao-contorno">Conheça nossos destinos internacionais <i class="bi bi-arrow-right"></i></a>
                     </div>
 
                 </div>

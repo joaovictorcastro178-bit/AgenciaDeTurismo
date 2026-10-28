@@ -1,72 +1,137 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <title>Cadastro para Viagem</title>
+    <!-- Importando o Bootstrap v5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Link Icones -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <style>
+        /* Definindo as cores solicitadas: Azul Escuro e Amarelo Mostarda */
+        body {
+            background-color: #0a1a33;
+            /* Azul escuro de fundo */
+            color: #ffffff;
+        }
 
-    <title>Cadastro |Viagem </title>
+        .card-custom {
+            background-color: #1b263b;
+            /* Azul escuro para o container */
+            border: 1px solid #ff9d1c;
+            /* Borda amarelo mostarda */
+        }
+
+        .btn-custom {
+            background-color: #ff9d1c;
+            /* Botão amarelo mostarda */
+            color: #0a1a33;
+            font-weight: bold;
+        }
+
+        .btn-custom:hover {
+            background-color: #ffd53e;
+            color: #0a1a33;
+        }
+    </style>
 </head>
 
-<body class="bg-secondary">
-    
-
-    <img src="https://www.marmorariasul.com.br/images/pagina_construcao.JPG" alt="PAGINA EM CONSTRUÇÃO! SOME DAQUI" class=" w-14rem">
-
-    <main class="container min-vh-100 d-flex justify-content-center align-items-center">
+<body>
+    <header>
+        PÁGINA INSDISPONÍVEL AINDA
 
 
-        <div class="card shadow w-100" style="max-width:450px;">
-            <div class="card-body p-4">
-                <h2 class="text-primary mb-4">
-                    Criar Conta
-                </h2>
-                <form action="" method="POST">
+        <a href="index.php" class="btn btn-custom rond"> Voltar a pagina inicial</a>
+
+
+    </header>
+
+    <!-- Container principal centralizado -->
+    <main class="container min-vh-100 d-flex justify-content-center align-items-center ">
+        <section>
+
+            <div class="card card-custom p-4 shadow-lg w-100" style="max-width: 25rem;">
+
+                <!-- Título do formulário -->
+                <h2 class="text-center mb-4 text-warning">Cadastro para Viagem</h2>
+
+                <!-- Início do formulário -->
+                <form action="#" method="POST" class="text-warning">
+
+                    <!-- Campo: Nome Completo -->
                     <div class="mb-3">
-                        <label class="form-label">Nome</label>
-                        <input type="text" name="nome" class="form-control" required>
+                        <label for="nome" class="form-label">Nome Completo:</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required>
                     </div>
+                    <!-- Campo: E-mail -->
                     <div class="mb-3">
-                        <label class="form-label">E-mail</label>
-                        <input type="email" name="email" class="form-control" required>
+                        <label for="email" class="form-label">E-mail:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
                     </div>
+                    <!-- Campo: Destino da Viagem -->
                     <div class="mb-3">
-                        <label class="form-label">Senha</label>
-                        <input type="password" name="senha" class="form-control" minlength="6" required>
+                        <label for="destino" class="form-label">Destino da Viagem:</label>
+                        <input type="text" class="form-control" id="destino" name="destino" required>
                     </div>
+                    <!-- Campo: Data de Ida -->
                     <div class="mb-3">
-                        <label class="form-label">
-                            Confirmar Senha
-                        </label>
-                        <input type="password" name="confirmar_senha" class="form-control" minlength="6" required>
+                        <label for="data-ida" class="form-label">Data de Ida:</label>
+                        <input type="date" class="form-control" id="data-ida" name="data_ida" required>
                     </div>
-
-                    <button type="submit" class="btn btn-primary w-100">
-                        Criar Conta
-                    </button>
-
+                    <!-- Campo: Data de Volta -->
+                    <div class="mb-3">
+                        <label for="data-volta" class="form-label">Data de Volta:</label>
+                        <input type="date" class="form-control" id="data-volta" name="data_volta" required>
+                    </div>
+                    <!-- Campo: Número de Acompanhantes -->
+                    <div class="mb-3">
+                        <label for="acompanhantes" class="form-label">Número de Acompanhantes:</label>
+                        <input type="number" class="form-control" id="acompanhantes" name="acompanhantes" min="0"
+                            value="0">
+                    </div>
+                    <!-- Botão de Envio -->
+                    <button type="submit" class="btn btn-custom w-100">Cadastrar Viagem</button>
                 </form>
-
-                <a href="login.php" class="d-block mt-3">
-                    Já possui conta? Fazer login
-                </a>
-
             </div>
+        </section>
 
+        <!-- Modal de Indisponibilidade -->
+        <div class="modal fade " id="indisponivelModal" tabindex="-1" aria-labelledby="indisponivelModalLabel"
+            aria-hidden="true" data-bs-backdrop="static">
+            <div class="modal-dialog modal-dialog-centered ">
+                <div class="modal-content modal-content-custom bg-dark border-warning-subtle ">
+                    <!-- Cabeçalho do Modal -->
+                    <div class="modal-header border-bottom border-warning">
+                        <h3 class="modal-title text-warning" id="indisponivelModalLabel">ATENÇÃO CABEÇÃO</h3>
+                    </div>
+                    <!-- Corpo do Modal -->
+                    <div class="modal-body">
+                        <div><img src="https://www.marmorariasul.com.br/images/pagina_construcao.JPG"
+                                alt="PAGINA EM CONSTRUÇÃO! SOME DAQUI" class=" w-14rem"></div>
+                        A página está indisponível no momento. Por favor aguarde terminar essa bomba, tente novamente
+                        mais tarde.
+                    </div>
+                    <!-- Rodapé do Modal -->
+                    <div class="modal-footer border-top border-warning">
+                        <button type="button" class="btn btn-custom w-100" data-bs-dismiss="modal">Entendido</button>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </main>
 
 
-    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
-        crossorigin="anonymous"></script>
+    <!-- Script para abrir o modal automaticamente ao carregar a página -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var meuModal = new bootstrap.Modal(document.getElementById('indisponivelModal'));
+            meuModal.show();
+        });
+    </script>
+
+    <!-- Importando o Bootstrap v5.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
