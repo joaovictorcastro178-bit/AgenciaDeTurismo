@@ -173,7 +173,7 @@
                             <div class="beneficio"><i class="bi bi-wallet2"></i> <span>Melhores<br>preços</span></div>
                             <div class="beneficio"><i class="bi bi-headset"></i> <span>Suporte<br>especializado</span></div>
                         </div>
-                        <a href="#contato" class="botao-contorno">Conheça nossos destinos nacionais <i class="bi bi-arrow-right"></i></a>
+                        <a href="cadastroViagem.php?tipo=nacional" class="botao-contorno">Conheça nossos destinos nacionais <i class="bi bi-arrow-right"></i></a>
                     </div>
 
                 </div>
@@ -235,7 +235,7 @@
                             <div class="beneficio"><i class="bi bi-wallet2"></i> <span>Melhores<br>preços</span></div>
                             <div class="beneficio"><i class="bi bi-headset"></i> <span>Suporte<br>especializado</span></div>
                         </div>
-                        <a href="#contato" class="botao-contorno">Conheça nossos destinos internacionais <i class="bi bi-arrow-right"></i></a>
+                        <a href="cadastroViagem.php?tipo=internacional" class="botao-contorno">Conheça nossos destinos internacionais <i class="bi bi-arrow-right"></i></a>
                     </div>
 
                 </div>
@@ -269,11 +269,11 @@
             <h5>Navegue</h5>
             <ul>
 
-                <li><a href="#">Início</a></li>
-                <li><a href="#pacotes">Pacotes</a></li>
-                <li><a href="#ofertas">Promoções</a></li>
-                <li><a href="#sobre">Sobre nós</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="index.php">Início</a></li>
+                <li><a href="index.php#pacotes">Pacotes</a></li>
+                <li><a href="index.php#ofertas">Promoções</a></li>
+                <li><a href="index.php#sobre">Sobre nós</a></li>
+                <li><a href="index.php#contato">Contato</a></li>
             
             </ul>
             </div>
@@ -283,9 +283,9 @@
             <h5>Destinos</h5>
             <ul>
 
-                <li><a href="#destinos">Viagens nacionais</a></li>
-                <li><a href="#internacionais">Viagens internacionais</a></li>
-                <li><a href="#ofertas">Ofertas especiais</a></li>
+                <li><a href="cadastroViagem.php?tipo=nacional">Viagens nacionais</a></li>
+                <li><a href="cadastroViagem.php?tipo=internacional">Viagens internacionais</a></li>
+                <li><a href="cadastroViagem.php?tipo=especial">Ofertas especiais</a></li>
             
             </ul>
             </div>
