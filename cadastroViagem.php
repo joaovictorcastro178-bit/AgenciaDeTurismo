@@ -1,3 +1,66 @@
+<?php
+require_once "conexao.php";
+
+$mensagem = "";
+$tipoMensagem = "danger";
+
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $nome = trim($_POST["nome"] ?? "");
+    $email = trim($_POST["email"] ?? "");
+    $destino = trim($_POST["destino"] ?? "");
+    $data_ida = $_POST["data_ida"] ?? "";
+    $data_volta = $_POST["data_volta"] ?? "";
+    $acompanhantes = filter_var(
+        $_POST["acompanhantes"] ?? 0,
+        FILTER_VALIDATE_INT
+    );
+
+    if (
+        $nome === "" ||
+        !filter_var($email, FILTER_VALIDATE_EMAIL) ||
+        $destino === "" ||
+        $data_ida === "" ||
+        $data_volta === "" ||
+        $data_volta < $data_ida ||
+        $acompanhantes === false ||
+        $acompanhantes < 0
+    ) {
+        $mensagem = "Verifique os dados preenchidos.";
+    } else {
+        $sql = "INSERT INTO viagem
+                (nome, email, destino, dataIda, dataVolta, acompanhamentos)
+                VALUES (?, ?, ?, ?, ?, ?)";
+
+        $stmt = mysqli_prepare($conexao, $sql);
+
+        if ($stmt) {
+            mysqli_stmt_bind_param(
+                $stmt,
+                "sssssi",
+                $nome,
+                $email,
+                $destino,
+                $dataIda,
+                $dataVolta,
+                $acompanhamentos
+            );
+
+            if (mysqli_stmt_execute($stmt)) {
+                $mensagem = "Viagem cadastrada com sucesso!";
+                $tipoMensagem = "success";
+            } else {
+                error_log(mysqli_stmt_error($stmt));
+                $mensagem = "Erro ao salvar a viagem no banco de dados.";
+            }
+
+            mysqli_stmt_close($stmt);
+            } else {
+                $mensagem = "Erro ao preparar SQL: " . mysqli_error($conexao);
+        }
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -54,6 +117,12 @@
             <div class="card card-custom p-4 shadow-lg w-100" style="max-width: 25rem;">
 
                 <!-- Título do formulário -->
+                <?php if ($mensagem !== ""): ?>
+                    <div class="alert alert-<?= $tipoMensagem ?>" role="alert">
+                        <?= htmlspecialchars($mensagem, ENT_QUOTES, "UTF-8") ?>
+                    </div>
+                <?php endif; ?>
+
                 <h2 class="text-center mb-4 text-warning">Cadastro para Viagem</h2>
 
                 <!-- Início do formulário -->

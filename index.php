@@ -65,7 +65,7 @@
                                 <span class="selo">PROMOÇÃO ESPECIAL</span>
                                 <h1>Salvador com <span class="laranja">20% de desconto</span></h1>
                                 <p>Água cristalina, culinaria local e paisagens deslumbrantes.</p>
-                                <a href="teste.html?tipo=especial" class="botao-laranja">Ver oferta</a>
+                                <a href="cadastroViagem.php?tipo=especial" class="botao-laranja">Ver oferta</a>
                                 
                             </div>
                         </div>
@@ -80,7 +80,7 @@
                                 <span class="selo">PROMOÇÃO ESPECIAL</span>
                                 <h1> Tour pelo <span class="laranja">Brasil</span></h1>
                                 <p>Tudo que você precisa para uma experiência inesquecível.</p>
-                                <a href="teste.html?tipo=internacional" class="botao-laranja">Ver oferta</a>
+                                <a href="cadastroViagem.php?tipo=internacional" class="botao-laranja">Ver oferta</a>
                             </div>
                         </div>
                     </div>
@@ -94,7 +94,7 @@
                                 <span class="selo">PROMOÇÃO ESPECIAL</span>
                                 <h1>Férias em <span class="laranja">Gramado</span></h1>
                                 <p>Chocolate quente, charme europeu e muito aconchego.</p>
-                                <a href="teste.html?tipo=nacional" class="botao-laranja">Ver oferta</a>
+                                <a href="cadastroViagem.php?tipo=nacional" class="botao-laranja">Ver oferta</a>
                             </div>
                         </div>
                     </div>
