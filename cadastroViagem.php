@@ -40,22 +40,23 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 $nome,
                 $email,
                 $destino,
-                $dataIda,
-                $dataVolta,
-                $acompanhamentos
+                $data_ida,
+                $data_volta,
+                $acompanhantes
             );
 
             if (mysqli_stmt_execute($stmt)) {
                 $mensagem = "Viagem cadastrada com sucesso!";
                 $tipoMensagem = "success";
             } else {
-                error_log(mysqli_stmt_error($stmt));
-                $mensagem = "Erro ao salvar a viagem no banco de dados.";
+                $mensagem = "Erro MySQL (" .
+                    mysqli_stmt_errno($stmt) . "): " .
+                    mysqli_stmt_error($stmt);
             }
 
             mysqli_stmt_close($stmt);
-            } else {
-                $mensagem = "Erro ao preparar SQL: " . mysqli_error($conexao);
+        } else {
+            $mensagem = "Erro ao preparar SQL: " . mysqli_error($conexao);
         }
     }
 }
