@@ -54,6 +54,7 @@ body {
 }
 
 /* menu com os links */
+.menu-topo,
 .menu {
     display: flex;
     gap: 25px;
@@ -62,6 +63,7 @@ body {
     padding: 0;
 }
 
+.menu-topo a,
 .menu a {
     color: white;
     text-decoration: none;
@@ -69,8 +71,15 @@ body {
     font-size: 14px;
 }
 
+.menu-topo a:hover,
 .menu a:hover {
     color: #ff9d1c;
+}
+
+/* menu do index fica ao lado da logo */
+.menu-topo {
+    margin-left: 40px;
+    margin-right: auto;
 }
 
 /* pagina atual: linha laranja embaixo */
@@ -126,8 +135,8 @@ body {
 .imagem-grande {
     width: 100%;
     height: 450px;
-    object-fit: cover;          /* a imagem preenche o espaço sem esticar */
-    background-color: #cccccc;  /* cor de fundo enquanto não temos a imagem */
+    object-fit: cover;          
+    background-color: #cccccc;  
 }
 
 /* camada escura em cima da imagem
@@ -186,7 +195,7 @@ body {
     right: 15px;
 }
 
-/* bolinhas de baixo do carrossel grande */
+/* bolinhas de baixo do carrossel */
 .pontos {
     position: absolute;
     left: 0;
@@ -212,7 +221,7 @@ body {
     flex: none;
 }
 
-/* bolinha do slide atual fica laranja */
+/* bolinha do slide fica laranja */
 .pontos button.active {
     background-color: #ff9d1c;
 }
@@ -338,8 +347,8 @@ body {
 
 /* ---------- pagina gerenciar ---------- */
 .card-custom {
-    background-color: #1b263b;   /* azul escuro do quadro */
-    border: 1px solid #ff9d1c;   /* borda laranja */
+    background-color: #1b263b;   
+    border: 1px solid #ff9d1c;   
     border-radius: 10px;
     padding: 20px;
 }
@@ -354,5 +363,3 @@ body {
     background-color: #e08700;
     color: #0a1a33;
 }
-
-  

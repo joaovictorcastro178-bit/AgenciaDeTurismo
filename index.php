@@ -29,15 +29,12 @@
                 <a href="#">
                     <img src="https://i.pinimg.com/736x/06/8d/ef/068def20a0d556e6cf18e66086bf5d8f.jpg" alt="Logo da agência" class="logo">
                 </a>
-                
 
-                <ul class="menu">
-                    <li><a href="#" class="ativo"><i class="bi bi-house-door"></i> Início</a></li>
-                    <li><a href="#pacotes"><i class="bi bi-airplane"></i> Pacotes</a></li>
-                    <li><a href="#destinos"><i class="bi bi-buildings"></i> Destinos</a></li>
-                    <li><a href="#ofertas"><i class="bi bi-tag"></i> Promoções</a></li>
-                    <li><a href="#sobre"><i class="bi bi-shield-check"></i> Sobre nós</a></li>
-                    <li><a href="#contato"><i class="bi bi-telephone"></i> Contato</a></li>
+                <ul class="menu-topo">
+                    <li><a href="index.php" class="ativo"><i class="bi bi-house-door"></i> Início</a></li>
+                    <li><a href="cadastroViagem.php"><i class="bi bi-pencil-square"></i> Cadastrar</a></li>
+                    <li><a href="editarViagem.php"><i class="bi bi-gear"></i> Gerenciar</a></li>
+                    <li><a href="login.php"><i class="bi bi-box-arrow-in-right"></i> Login</a></li>
                 </ul>
 
                  <a href="#contato" class="botao-laranja"><i class="bi bi-person"></i> Fale conosco</a>
@@ -247,7 +244,7 @@
         <footer class="rodape" id="contato">
             
         <div class="container">
-            <div class="row"></div>
+             <div class="row">
 
             <div class="col-lg-4 col-md-6 mb-4">
                 
@@ -284,9 +281,9 @@
             <h5>Destinos</h5>
             <ul>
 
-                <li><a href="teste.html?tipo=nacional">Viagens nacionais</a></li>
-                <li><a href="teste.html?tipo=internacional">Viagens internacionais</a></li>
-                <li><a href="teste.html?tipo=especial">Ofertas especiais</a></li>
+                <li><a href="cadastroViagem.php?tipo=nacional">Viagens nacionais</a></li>
+                <li><a href="cadastroViagem.php?tipo=internacional">Viagens internacionais</a></li>
+                <li><a href="cadastroViagem.php?tipo=especial">Ofertas especiais</a></li>
             
             </ul>
             </div>
