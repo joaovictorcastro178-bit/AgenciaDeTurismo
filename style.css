@@ -336,4 +336,23 @@ body {
     color: #8fa3c4;
 }
 
+/* ---------- pagina gerenciar ---------- */
+.card-custom {
+    background-color: #1b263b;   /* azul escuro do quadro */
+    border: 1px solid #ff9d1c;   /* borda laranja */
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.btn-custom {
+    background-color: #ff9d1c;
+    color: #0a1a33;
+    font-weight: bold;
+}
+
+.btn-custom:hover {
+    background-color: #e08700;
+    color: #0a1a33;
+}
+
   
