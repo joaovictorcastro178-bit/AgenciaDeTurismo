@@ -83,7 +83,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         .card-custom {
             background-color: #1b263b;
             /* Azul escuro para o container */
-            border: 1px solid #ff9d1c;
+            border: 2px solid #ff9d1c;
             /* Borda amarelo mostarda */
         }
 
@@ -102,7 +102,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </head>
 
 <body>
-    <header>
+    <header class="p-5rem">
         PÁGINA INSDISPONÍVEL AINDA
 
 

@@ -33,7 +33,7 @@
                 <ul class="menu-topo">
                     <li><a href="index.php" class="ativo"><i class="bi bi-house-door"></i> Início</a></li>
                     <li><a href="cadastroViagem.php"><i class="bi bi-pencil-square"></i> Cadastrar</a></li>
-                    <li><a href="editarViagem.php"><i class="bi bi-gear"></i> Gerenciar</a></li>
+                    <li><a href="editarViagem.php"><i class="bi bi-gear disabled" aria-disabled="true"></i> Gerenciar</a></li>
                     <li><a href="login.php"><i class="bi bi-box-arrow-in-right"></i> Login</a></li>
                 </ul>
 
