@@ -64,7 +64,6 @@ $viagens = mysqli_query($conexao, "SELECT * FROM viagem");
         <div class="menu">
             <a href="index.php">Início</a>
             <a href="cadastroViagem.php">Cadastro</a>
-            <a href="lendoDados.php">Viagens</a>
             <a href="editarViagem.php">Gerenciar</a>
         </div>
 

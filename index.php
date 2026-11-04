@@ -205,7 +205,7 @@
                                     <div class="row row-cols-3 g-2">
                                         <div class="col"><div class="cartao"><img src="https://api-www.louvre.fr/sites/default/files/2021-01/cour-napoleon-et-pyramide_1.jpg" alt="Paris"><span class="nome-lugar">Paris</span></div></div>
                                         <div class="col"><div class="cartao"><img src="https://www.viagenscinematograficas.com.br/wp-content/uploads/2026/03/Roma-Italia-O-que-Fazer-Capa.jpg" alt="Roma"><span class="nome-lugar">Roma</span></div></div>
-                                        <div class="col"><div class="cartao"><img src="https://ilhasmaldivas.com.br/wp-content/uploads/2021/10/ilhas-maldivas-galeria-vakkaru-resort-02.jpg" alt="Ilhas Maldivas"><span class="nome-lugar">Ilhas Maldivas</span></div></div>
+                                        <div class="col"><div class="cartao"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLKK3p9BHKtaHt2xt9JvgZsw6pL96MY5u3Ye272eOIT0EjDUiHBPO7t-A&s=10" alt="Ilhas Maldivas"><span class="nome-lugar">Ilhas Maldivas</span></div></div>
                                     </div>
                                 </div>
 

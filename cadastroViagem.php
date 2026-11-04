@@ -8,8 +8,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $nome = trim($_POST["nome"] ?? "");
     $email = trim($_POST["email"] ?? "");
     $destino = trim($_POST["destino"] ?? "");
-    $data_ida = $_POST["data_ida"] ?? "";
-    $data_volta = $_POST["data_volta"] ?? "";
+    $dataIda = $_POST["data_ida"] ?? "";
+    $dataVolta = $_POST["data_volta"] ?? "";
     $acompanhantes = filter_var(
         $_POST["acompanhantes"] ?? 0,
         FILTER_VALIDATE_INT
@@ -19,9 +19,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $nome === "" ||
         !filter_var($email, FILTER_VALIDATE_EMAIL) ||
         $destino === "" ||
-        $data_ida === "" ||
-        $data_volta === "" ||
-        $data_volta < $data_ida ||
+        $dataIda === "" ||
+        $dataVolta === "" ||
+        $dataVolta < $dataIda ||
         $acompanhantes === false ||
         $acompanhantes < 0
     ) {
@@ -40,8 +40,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 $nome,
                 $email,
                 $destino,
-                $data_ida,
-                $data_volta,
+                $dataIda,
+                $dataVolta,
                 $acompanhantes
             );
 
