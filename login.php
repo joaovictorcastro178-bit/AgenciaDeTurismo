@@ -60,10 +60,10 @@ $erro = isset($_GET["erro"]);
                                     Entrar
                                 </button>
                                 
-                                    <a href="cadastroUsuario.php" class="btn btn-warning">
+                                    <a href="criarAdmin.php" class="btn btn-warning">
                                         Cadastre-se
                                     </a>
-                                    <a href="index.html" class="btn btn-warning">
+                                    <a href="index.php" class="btn btn-warning">
                                         Voltar ao site
                                     </a>
                             </div>

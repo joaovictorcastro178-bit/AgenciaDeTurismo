@@ -1,49 +1,60 @@
 <?php
 
+// Inicia a sessão
 session_start();
 
-require_once("conexao.php");
-
-// Verifica se os campos foram enviados
-if (!isset($_POST['email']) || !isset($_POST['senha'])) {
-    header("Location: login.php?erro=1");
-    exit();
+// Permite somente requisições POST
+if ($_SERVER["REQUEST_METHOD"] !== "POST") {
+    header("Location: login.php");
+    exit;
 }
 
-$email = trim($_POST['email']);
-$senha = trim($_POST['senha']);
+// Recebe os dados do formulário
+$email = trim($_POST["email"] ?? "");
+$senha = $_POST["senha"] ?? "";
 
-// Busca o usuário pelo email
-$sql = "SELECT * FROM usuario WHERE email = ?";
+// Importa a conexão com o banco
+require("conexao.php");
 
+// Consulta o usuário pelo e-mail
+$sql = "SELECT idusuario, nome, senha_hash
+        FROM usuarios
+        WHERE email = ?
+        LIMIT 1";
+
+// Prepara a consulta
 $stmt = mysqli_prepare($conexao, $sql);
 
+// Vincula o e-mail ao parâmetro
 mysqli_stmt_bind_param($stmt, "s", $email);
 
+// Executa a consulta
 mysqli_stmt_execute($stmt);
 
+// Obtém o resultado
 $resultado = mysqli_stmt_get_result($stmt);
 
-// Verifica se encontrou o usuário
-if (mysqli_num_rows($resultado) === 1) {
+// Recupera o usuário encontrado
+$usuario = mysqli_fetch_assoc($resultado);
 
-    $usuario = mysqli_fetch_assoc($resultado);
+// Verifica se o usuário existe e se a senha confere
+if ($usuario && password_verify($senha, $usuario["senha_hash"])) {
 
-    // Verifica a senha
-    if (password_verify($senha, $usuario['senha_hash'])) {
+    // Renova o identificador da sessão
+    session_regenerate_id(true);
 
-        // Cria as sessões
-        $_SESSION['idusuario'] = $usuario['idusuario'];
-        $_SESSION['nome'] = $usuario['nome'];
-        $_SESSION['email'] = $usuario['email'];
-        $_SESSION['perfil'] = $usuario['perfil'];
+    // Armazena os dados na sessão
+    $_SESSION["usuario_id"] = $usuario["idUsuario"];
+    $_SESSION["usuario_nome"] = $usuario["nome"];
 
-        // Redireciona para o painel
-        header("Location: painel.php");
-        exit();
-    }
+    // Redireciona para o painel
+    header("Location: painel.php");
+    exit;
+
 }
 
-// Login inválido
+// Login incorreto
 header("Location: login.php?erro=1");
-exit();
+exit;
+
+?>
