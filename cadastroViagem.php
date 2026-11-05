@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $mensagem = "Verifique os dados preenchidos.";
     } else {
         $sql = "INSERT INTO viagem
-                (nome, email, destino, dataIda, dataVolta, acompanhamentos)
+                (nome, email, destino, dataIda, dataVolta, acompanhantes)
                 VALUES (?, ?, ?, ?, ?, ?)";
 
         $stmt = mysqli_prepare($conexao, $sql);

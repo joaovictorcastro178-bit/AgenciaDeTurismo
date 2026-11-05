@@ -44,7 +44,7 @@ if ($usuario && password_verify($senha, $usuario["senha_hash"])) {
     session_regenerate_id(true);
 
     // Armazena os dados na sessão
-    $_SESSION["usuario_id"] = $usuario["idUsuario"];
+    $_SESSION["idusuario"] = $usuario["idusuario"];
     $_SESSION["usuario_nome"] = $usuario["nome"];
 
     // Redireciona para o painel

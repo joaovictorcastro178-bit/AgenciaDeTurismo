@@ -1,6 +1,13 @@
 <?php
 require("conexao.php");
 
+session_start();
+ 
+if (!isset($_SESSION["idusuario"])) {
+    header("Location: login.php");
+    exit;
+}
+
 // ----- ATUALIZAR (salva as alterações no banco) -----
 if (isset($_POST['atualizar'])) {
     $idViagem = intval($_POST['idViagem']);
