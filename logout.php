@@ -2,11 +2,11 @@
 // Inicia a sessão do usuário.
 session_start();
 
-// Permite o logout somente por requisições POST.
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    header('Location: login.php');
-    exit;
-}
+// // Permite o logout somente por requisições POST.
+// if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+//     header('Location: login.php');
+//     exit;
+// }
 
 // Limpa todas as variáveis da sessão.
 $_SESSION = [];

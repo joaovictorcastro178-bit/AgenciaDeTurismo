@@ -2,7 +2,7 @@
 require("conexao.php");
 
 session_start();
- 
+
 if (!isset($_SESSION["idusuario"])) {
     header("Location: login.php");
     exit;
@@ -69,10 +69,48 @@ $viagens = mysqli_query($conexao, "SELECT * FROM viagem");
 <body>
     <div class="container my-4">
         <div class="menu">
-            <a href="index.php">Início</a>
-            <a href="cadastroViagem.php">Cadastro</a>
-            <a href="editarViagem.php">Gerenciar</a>
+            <a href="painel.php" type="button" class="btn btn-warnig">Início</a>
+            <a href="cadastroViagem.php" type="button" class="btn btn-warnig">Cadastro</a>
+            <a href="editarViagem.php" type="button" class="btn btn-warnig">Gerenciar</a>
+            <button type="button" class="btn btn-danger" id="btnSair">
+                Sair
+            </button>
+
+            <div class="modal fade" id="indisponivelModal" tabindex="-1" aria-labelledby="tituloModal"
+                aria-hidden="true">
+
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content modal-content-custom bg-dark border-danger border-3">
+
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="tituloModal">
+                                Confirmar saída
+                            </h3>
+
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar">
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+                            Tem certeza de que deseja sair do sistema?
+                            <img src="https://cdn.pixabay.com/animation/2024/05/16/21/45/21-45-34-3_512.gif" alt="">
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                                Não, continuar
+                            </button>
+
+                            <a href="logout.php" class="btn btn-danger">
+                                Sim, sair
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
+
 
         <div class="card-custom mt-4">
             <h3>Gerenciar Viagens</h3>
@@ -96,7 +134,8 @@ $viagens = mysqli_query($conexao, "SELECT * FROM viagem");
                                 <td><?= $viagem['dataIda'] ?></td>
                                 <td><?= $viagem['dataVolta'] ?></td>
                                 <td><?= htmlspecialchars($viagem['destino']) ?></td>
-                                <td><a href="?editar=<?= $viagem["idViagem"] ?>" class="btn btn-sm btn-primary">Alterar</a></td>
+                                <td><a href="?editar=<?= $viagem["idViagem"] ?>" class="btn btn-sm btn-primary">Alterar</a>
+                                </td>
                                 <td><a href="?apagar=<?= $viagem["idViagem"] ?>" class="btn btn-sm btn-outline-danger"
                                         onclick="return confirm('Cancelar esta viagem?')">Cancelar</a></td>
                             </tr>
@@ -122,6 +161,24 @@ $viagens = mysqli_query($conexao, "SELECT * FROM viagem");
             <?php endif; ?>
         </div>
     </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const btnSair = document.getElementById("btnSair");
+            const modalElemento = document.getElementById("indisponivelModal");
+
+            const meuModal = new bootstrap.Modal(modalElemento);
+
+            btnSair.addEventListener("click", function () {
+                meuModal.show();
+            });
+
+        });
+    </script>
 </body>
 
 </html>

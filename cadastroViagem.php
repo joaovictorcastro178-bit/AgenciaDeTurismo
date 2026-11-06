@@ -1,6 +1,12 @@
 <?php
-require_once "conexao.php";
 
+require_once "conexao.php";
+session_start();
+
+if (!isset($_SESSION["idusuario"])) {
+    header("Location: login.php");
+    exit;
+}
 $mensagem = "";
 $tipoMensagem = "danger";
 
@@ -173,14 +179,18 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 <div class="modal-content modal-content-custom bg-dark border-warning-subtle ">
                     <!-- Cabeçalho do Modal -->
                     <div class="modal-header border-bottom border-warning">
-                        <h3 class="modal-title text-warning" id="indisponivelModalLabel">ATENÇÃO CABEÇÃO</h3>
+                        <h3 class="modal-title text-warning" id="indisponivelModalLabel">Um momento amigo!</h3>
                     </div>
                     <!-- Corpo do Modal -->
                     <div class="modal-body">
                         <div><img src="https://www.marmorariasul.com.br/images/pagina_construcao.JPG"
-                                alt="PAGINA EM CONSTRUÇÃO! SOME DAQUI" class=" w-14rem"></div>
-                        A página está indisponível no momento. Por favor aguarde terminar essa bomba, tente novamente
-                        mais tarde.
+                                alt="PAGINA EM CONSTRUÇÃO! SOME DAQUI" class=" w-14rem">
+                            <div>
+
+                                <img src="https://media.tenor.com/XQXbcKtqYe0AAAAC/dumaetslld.gif" alt="periqito dance"
+                                    height="100rem">
+                            </div>
+                        </div>
                     </div>
                     <!-- Rodapé do Modal -->
                     <div class="modal-footer border-top border-warning">
@@ -195,8 +205,24 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <!-- Script para abrir o modal automaticamente ao carregar a página -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            var meuModal = new bootstrap.Modal(document.getElementById('indisponivelModal'));
-            meuModal.show();
+
+            const modalElemento = document.getElementById("indisponivelModal");
+            const meuModal = new bootstrap.Modal(modalElemento);
+
+            // Verifica se o modal já foi exibido nesta sessão
+            if (!sessionStorage.getItem("modalExibido")) {
+
+                meuModal.show();
+
+                // Registra que o modal já foi exibido
+                sessionStorage.setItem("modalExibido", "true");
+            }
+
+            // Botão de sair continua funcionando normalmente
+            document.getElementById("btnSair").addEventListener("click", function () {
+                meuModal.show();
+            });
+
         });
     </script>
 

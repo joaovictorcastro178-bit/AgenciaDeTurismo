@@ -24,7 +24,7 @@ $erro = isset($_GET["erro"]);
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <link rel="stylesheet" href="style.css">
-       
+
 </head>
 
 <body>
@@ -43,31 +43,31 @@ $erro = isset($_GET["erro"]);
                 <div class="row ">
                     <div class="col">
 
-                    <h2>Faça login no nosso site!</h2>
+                        <h2>Faça login no nosso site!</h2>
                         <form action="autenticar.php" method="POST">
                             <div class="mb-3">
                                 <label class="form-label">Email</label>
-                                <input type="text" name="email" class="form-control" >
-                                
-                            <div class="mb-3">
-                                <label class="form-label">Senha</label>
-                                <input type="password" class="form-control" name="senha">
-                            </div>
+                                <input type="text" name="email" class="form-control">
 
-                            <!-- Botão Entrar -->
-                            <div class="d-flex justify-content-center align-items-center gap-3">
-                                <button type="submit" class="btn btn-warning">
-                                    Entrar
-                                </button>
-                                
+                                <div class="mb-3">
+                                    <label class="form-label">Senha</label>
+                                    <input type="password" class="form-control" name="senha">
+                                </div>
+
+                                <!-- Botão Entrar -->
+                                <div class="d-flex justify-content-center align-items-center gap-3">
+                                    <button type="submit" class="btn btn-warning">
+                                        Entrar
+                                    </button>
+
                                     <a href="criarAdmin.php" class="btn btn-warning">
                                         Cadastre-se
                                     </a>
                                     <a href="index.php" class="btn btn-warning">
                                         Voltar ao site
                                     </a>
-                            </div>
-                            
+                                </div>
+
                         </form>
                         <!-- Voltar ao site -->
 
